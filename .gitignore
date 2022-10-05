@@ -1,0 +1,4 @@
+/node-api-demo/build/
+/node-api-demo/node_modules/
+go-demo/mock/*
+go-demo/docs/

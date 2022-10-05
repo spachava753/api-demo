@@ -1,0 +1,41 @@
+{
+    "entryFile": "src/app.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": ["src/**/*Controller.ts"],
+    "spec": {
+      "openapi": "3.0.0",
+      "servers": [ 
+            {   "url":"http://localhost:3000",
+                "description":"dev" 
+            },
+            { 
+              "url":"https://127.0.0.1:3000",
+              "description":"local"
+            }
+          ],
+      "basePath": "/",
+      "schemes":["http","https"],
+      "description": "Description of a test API",
+      "termsOfService": "https://example.com/terms/",
+      "host": "localhost:3000",
+      "license": "MIT",
+      "name": "API Demo",
+      "version": "1.0.0",
+      "tags":  [
+        {
+          "name": "User",
+          "description": "Operations about users",
+          "externalDocs": {
+            "description": "Find out more about users",
+            "url": "http://swagger.io"
+          }
+        }
+      ],
+      "outputDirectory": "build",
+      "specVersion": 3
+    },
+    "routes": {
+      "routesDir": "build"
+    }
+  }
+  
